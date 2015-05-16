@@ -1,7 +1,7 @@
 {
   "name": "resources",
   "version": "1.0.0",
-  "description": "",
+  "description": "ResourcesFetch",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,5 +10,13 @@
   "dependencies": {
     "express": "^4.12.3",
     "request": "^2.55.0"
+  },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ush189/ResourcesFetch.git"
   }
 }
