@@ -3,6 +3,11 @@ var request = require('request');
 
 var app = express();
 
+app.use(function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+});
+
 app.get('/', function (req, res) {
     res.send('Hello World!');
 });
