@@ -2,6 +2,7 @@ var express = require('express');
 var request = require('request');
 
 var app = express();
+var port = process.env.PORT || 3000;
 
 app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
@@ -22,6 +23,6 @@ app.get('/prices', function (req, res) {
     });
 });
 
-app.listen(3000, function () {
-    console.log('Server listening at port 3000');
+app.listen(port, function () {
+    console.log('Server listening at port %s', port);
 });
